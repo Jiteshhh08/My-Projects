@@ -1,0 +1,241 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.NavBar{
+    height: 64px;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Nav_Left {
+    margin-left: 4.5vw;
+    height: 64px;
+    width: 75.5vw;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.Nav_Logo{
+    height: 31px;
+    width: 107px;
+    background-image: url("Bookmyshow-logoid.png");
+    background-size: cover;
+}
+
+.Search_Bar{
+    margin-left: 3vw;
+    height: 37px;
+    width: 43vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+
+}
+
+
+.Search_Bar input{
+    height: 36.6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.Nav_Right{
+    height: 64px;
+    width: 20vw;
+    /* background-color: pink; */
+    margin: 0 4vw 0 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.Nav_City{
+    display: flex;
+    align-items: center;
+    /* margin: 0 0 0 20px; */
+}
+
+.Nav_City p{
+    height: 20px;
+    width: 67px;
+}
+
+#City_Name{
+    color: rgb(28, 28, 28);
+    font-size: 0.85rem;
+}
+
+#Select_City{
+    height: 10px;
+    width: 15px;
+    border: none;
+    margin: 0 0 0 0.5vw;
+    color: gray;
+    padding: 5px;                 
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+.Nav_signIn{
+    height: 25px;
+    width: 67px;
+    margin: 0 0 0 3vw;
+}
+
+#SignIn_Button{
+    height: 25px;
+    width: 67px;
+    background-color: rgb(255, 0, 76);
+    color: white;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 5px;    
+    margin: 0 0 0 3vw;
+}
+
+.Nav_Menu{
+    margin: 0 0 0 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.Nav_Bottom{
+    height: 40.5px;
+    width: 100%;
+    color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ededed;
+}
+
+.Nav_Bottom_Left{
+    height: 40px;
+    width: 30vw;
+    font-size: 0.85rem;
+    margin: 0 0 0 3.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Nav_Bottom_Right{
+    height: 40px;
+    width: 25vw;
+    font-size: 0.85rem;
+    margin: 0 3.5vw 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+#Nav_Ending{
+    background-color: rgb(250, 247, 247);
+}
+
+/* Hero Section  */
+
+.Hero_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+}
+
+.Hero_Section{
+    height: 300px;
+    width: 95vw;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.Hero_Image{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    transition: 1s;
+}
+
+.Navi_Button{
+    height: 35px;
+    width: 35px;
+}
+
+.Navi_Button button{
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #c4c3c3;
+}
+
+/* Section 1 */
+
+.MainRecContainer{
+    height: 63vh;
+    width: 100%;
+    margin-top: 7vh;
+    overflow: hidden;
+}
+
+#Rec{
+    margin-left: 55px;
+    color: #545353;
+}
+
+.Rec_Container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Rec_Section{
+    height: 70vh;
+    width: 90vw;
+    margin: 0vh 2vh 2vh 2vh;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Rec_Movies{
+    height: 80%;
+    width: 17%;
+    border-radius: 10px;
+}
+
+.Rec_Movie{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+

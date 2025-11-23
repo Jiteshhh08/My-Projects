@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets, Plays, Sports, Events & Cinemas near Mumbai - BookMyShow Mumbai.</title>
+    <link rel="stylesheet" href="BMS.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="NavBar">
+        <div class="Nav_Left">
+            <div class="Nav_Logo">
+            </div>
+            <div class="Search_Bar">
+                <i class="material-icons search">search</i>
+                <input id="Search_Bar_Input" type="text" placeholder="Search for Movies, Events, Plays & More">
+            </div>
+        </div>
+        <div class="Nav_Right">
+            <div class="Nav_City">
+                <p><span id="City_Name">Select City</span></p>
+                <select id="Select_City">
+                    <option value="">--Select a city--</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="banglore">Banglore</option>
+                </select>
+            </div>
+            <div class="Nav_SignIn">
+                <button id="SignIn_Button">Sign in</button>
+            </div>
+            <div class="Nav_Menu">
+                <i class="material-icons menu">menu</i>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="Nav_Bottom">
+        <div class="Nav_Bottom_Left">
+            <span>Movies</span>
+            <span>Stream</span>
+            <span>Events</span>
+            <span>Plays</span>
+            <span>Sports</span>
+            <span>Activities</span>
+        </div>
+        <div class="Nav_Bottom_Right">
+            <span>ListYourShow</span>
+            <span>Corporates</span>
+            <span>Offers</span>
+            <span>Gift Cards</span>
+        </div>
+    </div>
+    <hr id="Nav_Ending">
+
+    <!-- Hero Section  -->
+
+    <div class="Hero_Container">
+        <div class="Navi_Button"><button id="Prev" onclick="goPrev()">Prev</button></div>
+        <div class="Hero_Section">
+            <img src="HeroSection1.avif" alt="Hero_Image1" class="Hero_Image">
+            <img src="HeroSection2.avif" alt="Hero_Image2" class="Hero_Image">
+            <img src="HeroSection3.avif" alt="Hero_Image3" class="Hero_Image">
+        </div>
+        <div class="Navi_Button"><button id="Next" onclick="goNext()">Next</button></div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="MainRecContainer">
+        <h2 id="Rec">RECOMMENDED MOVIES</h2>
+        <div class="Rec_Container">
+            <div class="Rec_Section">
+                <div class="Rec_Movies"><img src="Rec_Movie1.avif" alt="Rec_Movie1" class="Rec_Movie"></div>
+                <div class="Rec_Movies"><img src="Rec_Movie2.avif" alt="Rec_Movie2" class="Rec_Movie"></div>
+                <div class="Rec_Movies"><img src="Rec_Movie3.avif" alt="Rec_Movie3" class="Rec_Movie"></div>
+                <div class="Rec_Movies"><img src="Rec_Movie4.avif" alt="Rec_Movie4" class="Rec_Movie"></div>
+                <div class="Rec_Movies"><img src="Rec_Movie5.avif" alt="Rec_Movie5" class="Rec_Movie"></div>
+        </div>
+    </div>
+
+</body>
+<script src="BMS.js"></script>
+
+</html>

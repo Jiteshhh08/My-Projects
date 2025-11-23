@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorSwitcher</title>
+</head>
+
+<!--CSS-->
+
+<style>
+*{
+    margin: 50px 0 0 0 ;
+    padding: 0;
+    font-family: Arial;
+}
+    
+.Colors{
+    border: 3px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    height: 6.25rem;
+    width: 6.25rem;
+    margin: 0 0 0 20px;
+}
+
+.ColorsContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#white{
+    background-color: white;
+}
+
+#grey{
+    background-color: gray;
+}
+
+#cyan{
+    background-color: cyan;
+}
+
+#bottom{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    color: rgb(25, 32, 254);
+}
+</style>
+<body>
+
+    <h1 id="heading">COLOR SCHEME SWITCHER</h1>
+    
+    <div class="ColorsContainer">
+        <span class="Colors" id="yellow"></span>
+        <span class="Colors" id="white"></span>
+        <span class="Colors" id="grey"></span>
+        <span class="Colors" id="cyan"></span>
+    </div>
+
+    <h3 id="bottom">CHOOSE THE BACKGROUND OF THE WEBSITE!!!</h3>
+
+</body>
+        <!-- JAVASCRIPT -->
+<script>
+
+const buttons = document.querySelectorAll(".Colors")
+const body = document.querySelector("body")
+
+// console.log(buttons);        //nodelist
+
+buttons.forEach(function (Colors){
+    console.log(Colors);
+    Colors.addEventListener('click', function(e){
+        console.log(e);
+        console.log(e.target);   
+    //     if(e.target.id === "grey") {
+    //         body.style.backgroundColor = e.target.id
+    //     }     
+    //     if(e.target.id === "white") {
+    //         body.style.backgroundColor = e.target.id
+    //     }     
+    //     if(e.target.id === "yellow") {
+    //         body.style.backgroundColor = e.target.id
+    //     }     
+    //     if(e.target.id === "cyan") {
+    //         body.style.backgroundColor = e.target.id
+    //     }     
+         
+    //
+
+    // with switch case
+            //Method 1
+    switch (e.target.id) {
+        case "yellow":
+            body.style.backgroundColor = "yellow";
+            break;
+        case "white":
+            body.style.backgroundColor = "white";
+            break;
+        case "cyan":
+            body.style.backgroundColor = "cyan";
+            break;
+        case "grey":
+            body.style.backgroundColor = "grey";
+            break;
+    
+        default:
+            break;
+    }
+
+            //Method 2
+//             const color = e.target.id;
+//     switch (color) {
+//     case "yellow":
+//     case "white":
+//     case "cyan":
+//     case "grey":
+//         body.style.backgroundColor = color;
+//         break;
+// } 
+
+
+    });
+
+});
+
+
+
+// Writing code by myself
+
+// const Colors = document.querySelectorAll(".Colors")
+// const Body = document.querySelector('body')
+
+// Colors.forEach(function (colors){
+//     colors.addEventListener('click', function(e){
+//         if (e.target.id === 'white'){
+//             Body.style.backgroundColor = e.target.id
+//         }
+//         if (e.target.id === 'yellow'){
+//             Body.style.backgroundColor = e.target.id
+//         }
+//         if (e.target.id === 'cyan'){
+//             Body.style.backgroundColor = e.target.id
+//         }
+//         if (e.target.id === 'grey'){
+//             Body.style.backgroundColor = e.target.id
+//         }
+        
+        
+//     })
+    
+// })
+
+</script>
+</html>

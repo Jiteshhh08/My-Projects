@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quix Game</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+
+<body>
+    <div class="Container">
+
+        <div class="Screen active" id="Start_screen">
+            <h1>QUIZ TIME!!!</h1>
+            <p>Test your knowledge with this fun Questions</p>
+            <button class="Start_btn">Start quiz</button>
+        </div>
+
+
+        <div class="Screen Quiz_screen">
+
+            <div class="Quiz_header">
+                <h1 class="Questions">Questions</h1>
+            </div>
+
+            <div class="Quiz_info">
+                <p class="Quess_num">Question <span class="Curr_quess">1</span> of <span class="Total_quess">5</span>
+                </p>
+                <p> Score: <span class="Score">0</span></p>
+            </div>
+
+            <div class="Ans_container">
+                <!-- Answer will be added later through JS -->
+            </div>
+
+            <div class="Progress_bar">
+                <div class="Progress"></div>
+            </div>
+
+        </div>
+
+        <div class="Screen Result_screen">
+            <h1>Quiz Result</h1>
+
+            <div class="Final_score">
+                <p>You scored <span class="Curr_score">0</span> out of <span class="Total_score">5</span></p>
+
+                <h2 class="Msg">Good Job!</h2>
+            </div>
+
+            <button id="Restart">Restart Quiz</button>
+        </div>
+
+    </div>
+
+</body>
+<script src="Quiz.js"></script>
+
+</html>

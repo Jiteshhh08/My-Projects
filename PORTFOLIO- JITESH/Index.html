@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="NavBar">
+            <div class="Logo"><a href="#">JITESH</a></div>
+            <div class="NavRight">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+
+    <main>
+        <div class="Main_container">
+            <div class="Main_left">
+                <div class="Main_info">
+                    <h1 id="Hi">Hi,</h1>
+                    <div class="Intro">
+                        <h3 id="Abt">I am </h3>
+                        <h1 id="Abt_name"> JITESH JHA</h1>
+                    </div>
+                    <div id="Passion">& I am a Passionate</div>
+                    <span id="element"></span>
+                    <div class="CV_btn">
+                        <button class="Download_cv btn">Download CV</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Main_right">
+                <div class="Main_right_image">
+
+                </div>
+            </div>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="Abt_container">
+            <h1 id="Heading_abt">ABOUT ME</h1>
+            <div class="Abt_main_con">
+                <div class="Abt_left">
+                    <div class="Abt_img"></div>
+                </div>
+                <div class="Abt_right">
+                    <h3>I am Jitesh Jha,</h3>
+                    <h3>A Student in his First year of college, Pursuing CSE at THAKUR COLLEGE OF ENGINEERING AND
+                        TECHNOLOGY</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILLS SECTION -->
+
+        <div class="Skills_container">
+            <div class="Heading_skills">
+                <h1 id="Heading_skills_title">SKILLS</h1>
+            </div>
+            <div class="SKills_main_container">
+                <div class="Skill">
+                    <div class="Skill_icon"><i class="fa-brands fa-html5"></i></div>
+                    <div class="Skill_name">HTML</div>
+                </div>
+                <div class="Skill">
+                    <div class="Skill_icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="Skill_name">CSS</div>
+                </div>
+                <div class="Skill">
+                    <div class="Skill_icon"><i class="fa-brands fa-js"></i></div>
+                    <div class="Skill_name">JS</div>
+                </div>
+                <div class="Skill">
+                    <div class="Skill_icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="Skill_name">SQL</div>
+                </div>
+                <div class="Skill">
+                    <div class="Skill_icon"><i class="fa-brands fa-react"></i></div>
+                    <div class="Skill_name">REACT JS</div>
+                </div>
+                <div class="Skill">
+                    <div class="Skill_icon"><i class="fa-brands fa-angular"></i></div>
+                    <div class="Skill_name">ANGULAR JS</div>
+                </div>
+            </div>
+        </div>
+
+        <!--PROJECTS-->
+        <div class="Project_container">
+            <div class="Heading_projects">
+                <h1>PROJECTS</h1>
+            </div>
+            <div class="Project_main_container">
+                <div class="Project">
+                    <div class="Project_logo First_logo"></div>
+                    <div class="Project_name">AMAZON CLONE</div>
+                </div>
+                <div class="Project">
+                    <div class="Project_name">...</div>
+                </div>
+                <div class="Project">
+                    <div class="Project_name">...</div>
+                </div>
+                <div class="Project">
+                    <div class="Project_name">...</div>
+                </div>
+                <div class="Project">
+                    <div class="Project_name">...</div>
+                </div>
+                <div class="Project">
+                    <div class="Project_name">...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+
+        <div class="Contact_container">
+            <div class="Heading_contact">
+                <h1>CONTACT ME</h1>
+            </div>
+            <div class="Contact_main_con">
+                <form class="Contact_main_con_form">
+                    <input type="name" placeholder="Enter your Name" class="name"> 
+                    <input type="email" placeholder="Enter Your email" class="email">
+                    <input type="text" placeholder="Type Here..." class="msg">
+                    <button class="Contact_submit btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- CDN ANIMATION FOR MAIN SECTION -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['LEARNER', 'TECH ENTHUSIAST', 'WEB DEVLOPER'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <!-- SCROLL ANIMATION -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</body>
+
+</html>

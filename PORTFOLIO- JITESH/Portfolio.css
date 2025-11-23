@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:wght@500&display=swap');
+
+/*header*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: ubuntu;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: linear-gradient(to right top, #03045e, #21187a, #382c96, #4d41b4, #6257d3, #4773e7, #268df5, #00a4ff, #00bdff, #00d4ff, #00e8fb, #5ffbf1);
+}
+
+.NavBar {
+    height: 8vh;
+    width: 100%;
+    background-color: #03045e;
+    ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Logo {
+    font-size: 2rem;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Logo a {
+    color: #ffffff;
+}
+
+.NavRight {
+    width: 70vw;
+    display: flex;
+    justify-content: end;
+}
+
+.NavRight ul {
+    display: flex;
+}
+
+.NavRight ul li {
+    margin-right: 40px;
+    font-size: 1rem;
+}
+
+.NavRight ul li a {
+    color: white;
+}
+
+/* Main Section */
+
+.Main_container {
+    Height: 92vh;
+    width: 100%;
+
+    display: flex;
+}
+
+.Main_left {
+    height: 92vh;
+    Width: 40%;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.Main_info {
+    margin: 23vh 0 0 15vw;
+}
+
+#Hi {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.Intro {
+    display: flex;
+    align-items: last baseline;
+    Width: 30vw;
+}
+
+#Abt {
+    font-size: 2rem;
+}
+
+#Abt_name {
+    font-size: 2.8rem;
+    margin-left: 1vw;
+    color: yellow;
+    /* text-shadow: 0 0 0px #03045e;  */
+}
+
+.Main_right {
+    height: 92vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.Main_right_image {
+    background-image: url("Portfolio\ photo2.png");
+    background-size: cover;
+    height: 480px;
+    width: 480px;
+    margin-top: 5vh;
+}
+
+.CV_btn {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #03045e;
+    color: #ffffff;
+    font-weight: 400;
+    border: 2px solid #03045e;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ABOUT SECTION */
+
+.Abt_container {
+    height: 100vh;
+    width: 100%;
+}
+
+#Heading_abt {
+    padding: 6vh 0 0 40vw;
+    color: white;
+}
+
+.Abt_main_con {
+    display: flex;
+}
+
+.Abt_left {
+    margin: 8vh 0 0 10vw;
+    height: 70vh;
+    width: 30vw;
+}
+
+.Abt_img {
+    height: 100%;
+    width: 100%;
+    background-image: url("Portfolio photo4.png");
+    background-size: cover;
+}
+
+.Abt_right {
+    height: 20vh;
+    width: 100%;
+    margin: 10vh 0 0 0;
+    padding: 10vh 20vh 10vh 10vh;
+    color: #ffffff;
+}
+
+/* SKILLS SECTION */
+
+.Skills_container {
+    height: 100vh;
+    width: 100%;
+}
+
+.Heading_skills {
+    padding: 8vh 0 0 0;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.SKills_main_container {
+    height: 75vh;
+    width: 60vw;
+    margin: 5vh 20vw 10vh 20vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Skill {
+    height: 30vh;
+    width: 13.5vw;
+    margin: 20px 40px 20px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #793EF6;
+}
+
+/* PROJECT */
+
+.Project_container {
+    height: 100vh;
+    width: 100%;
+}
+
+.Heading_projects {
+    padding: 8vh 0 0 0;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.Project_main_container {
+    height: 75vh;
+    width: 60vw;
+    margin: 5vh 20vw 10vh 20vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Project {
+    height: 30vh;
+    width: 13.5vw;
+    margin: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #793EF6;
+    gap: 10px;
+
+}
+
+.Project_name {
+    margin: 0 0 30px 0;
+    font-weight: 700;
+}
+
+.Project_logo {
+    height: 45px;
+    width: 100px;
+    background-color: #03045e;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.First_logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+}
+
+/* CONTACT */
+
+.Contact_container {
+    height: 100vh;
+    width: 100%;
+}
+
+.Heading_contact {
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.Contact_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact_main_con {
+    height: 60vh;
+    width: 25vw;
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+Input {
+    padding: 0 5px;
+    height: 30px;
+    width: 250px;
+    border: 2px solid #4773e7;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.name {
+    background-color: #fff;
+}
+
+.email {
+    background-color: #fff;
+}
+
+.msg {
+    background-color: #fff;
+    height: 60px;
+}
+
+.Contact_submit {
+    margin-top: 10px;
+}
